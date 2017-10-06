@@ -1,0 +1,21 @@
+{
+  "name": "tradecore-test",
+  "version": "1.0.0",
+  "description": "Task for senior candidate",
+  "main": "index.js",
+  "author": "Nemanja Stojković",
+  "license": "MIT",
+  "scripts": {
+    "start": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "node server/index.js",
+    "client": "node server/start-client.js",
+    "lint": "eslint"
+  },
+  "dependencies": {
+    "babel-core": "^6.26.0",
+    "express": "^4.16.1"
+  },
+  "devDependencies": {
+    "concurrently": "^3.5.0"
+  }
+}
